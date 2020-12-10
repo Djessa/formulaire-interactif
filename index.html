@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prémier test avec Jquery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <form class="m-2 p-2" method="POST">
+        <div id="error" class="alert alert-danger">
+            Formulaire invalide
+        </div>
+        <div id="success" class="alert alert-success">
+            Envoyé avec succès
+        </div>
+        <div class="form-group">
+            <label for="pseuo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="confirm_password">Confirmation du mot de passe</label>
+            <input type="password" name="confirm_password" id="confirm_password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Adresse e-mail</label>
+            <input type="email" name="email" id="email" class="form-control">
+        </div>
+        <div class="form-group mt-4">
+            <button type="submit" class="btn btn-success" id="btn_envoyer">Envoyer</button>
+            <button type="reset" class="btn btn-secondary" id="btn_reset">Refraîchier</button>
+        </div>
+    </form>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
